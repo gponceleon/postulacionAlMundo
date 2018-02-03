@@ -46,16 +46,16 @@ public class DispatcherTestsFailers {
 		try {
 			prop.load(input);
 
-			int cantEmplo = Integer.parseInt(prop.getProperty("app.employees"));
+			int cantEmplo = 10;
 			
 			//More than 10 calls
-			calls = Integer.parseInt(prop.getProperty("app.testf.calls"));
+			calls = 12;
 
 			dispatcher = Dispatcher.getInstance(cantEmplo, calls);
 
-			int cantOper = Integer.parseInt(prop.getProperty("app.operator"));
-			int cantSup = Integer.parseInt(prop.getProperty("app.supervisor"));
-			int cantDir = Integer.parseInt(prop.getProperty("app.director"));
+			int cantOper = 5;
+			int cantSup = 3;
+			int cantDir = 2;
 
 			dispatcher.setEmployees(cantOper, cantSup, cantDir);
 
@@ -71,6 +71,7 @@ public class DispatcherTestsFailers {
 		System.out.println("This is executed before each Test");
 	}
 
+	
 	@Test
 	public void checkQuantity() {
 		int cantOp = 6;

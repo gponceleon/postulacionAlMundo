@@ -45,14 +45,14 @@ public class DispatcherTestsSuccessful {
 		    try {
 				prop.load(input);
 				
-				int cantEmplo = Integer.parseInt(prop.getProperty("app.employees"));
-				 calls = Integer.parseInt(prop.getProperty("app.calls"));
+				int cantEmplo =10;
+				calls = 10;
 				
 				dispatcher = Dispatcher.getInstance(cantEmplo,calls);
 				
-				int cantOper = Integer.parseInt(prop.getProperty("app.operator"));
-				int cantSup = Integer.parseInt(prop.getProperty("app.supervisor"));
-				int cantDir = Integer.parseInt(prop.getProperty("app.director"));
+				int cantOper = 4;
+				int cantSup = 3;
+				int cantDir = 3;
 				
 				dispatcher.setEmployees(cantOper,cantSup,cantDir);
 				

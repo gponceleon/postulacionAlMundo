@@ -12,9 +12,9 @@ import java.util.Random;
 
 public class Employee extends Thread {
 
-	private String typeEmployee;
-	private Boolean occupied;
-	private int employeeId;
+	protected String typeEmployee;
+	protected Boolean occupied;
+	protected int employeeId;
 	
 	/*Constructor*/
 	public Employee(String typeEmployee, int employeeId) {
